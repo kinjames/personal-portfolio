@@ -1,0 +1,83 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    @include breakpoint-up(medium){
+        header{
+            width: 20%;
+            height: 100%;
+            position: fixed;
+        }
+
+        main{
+            width: 80%;
+            position: absolute;
+            height: 100%;
+            left: 20%;
+            border: 2px solid green;
+        }
+    }
+
+    @include breakpoint-down(small){
+        header {
+            width: 100%;
+            position: fixed;
+            bottom: 0%;
+            height: 5vh;
+        }
+
+        main{
+            width: 100%;
+            left: 0;
+            height: 100vh;
+            border: 2px solid green;
+        }
+    }
+
+}
+
+
+.flex {
+    display: flex;
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+
+
+.hide-from-mobile{
+    @include breakpoint-down(small){
+        display: none;
+    }
+}
