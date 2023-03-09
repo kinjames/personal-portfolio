@@ -25,6 +25,7 @@ body{
     position: relative;
     width: 100vw;
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 
     @include breakpoint-up(medium){
         header{
@@ -71,6 +72,14 @@ body{
     }
     &-ai-c {
         align-items: center;
+    }
+
+    &-col-desk{
+        flex-direction: column;
+
+        @include breakpoint-down(small){
+            flex-direction: row;
+        }
     }
 }
 
