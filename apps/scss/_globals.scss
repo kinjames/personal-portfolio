@@ -24,10 +24,40 @@ ul{
 body{
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
 
     @include breakpoint-up(medium){
+        header{
+            width: 35%;
+            height: 100%;
+            position: fixed;
+        }
+
+        main{
+            width: 65%;
+            position: absolute;
+            height: 100%;
+            left: 35%;
+            border: 2px solid green;
+        }
+    }
+    @include breakpoint-up(large){
+        header{
+            width: 30%;
+            height: 100%;
+            position: fixed;
+        }
+
+        main{
+            width: 70%;
+            position: absolute;
+            height: 100%;
+            left: 30%;
+            border: 2px solid green;
+        }
+    }
+    @include breakpoint-up(xlarge){
         header{
             width: 20%;
             height: 100%;
@@ -48,13 +78,13 @@ body{
             width: 100%;
             position: fixed;
             bottom: 0%;
-            height: 5vh;
+            height: 8vh;
         }
 
         main{
             width: 100%;
             left: 0;
-            height: 100vh;
+            height: 100%;
             border: 2px solid green;
         }
     }
@@ -79,6 +109,8 @@ body{
 
         @include breakpoint-down(small){
             flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
         }
     }
 }
