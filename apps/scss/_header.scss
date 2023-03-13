@@ -2,10 +2,16 @@ header{
     
     padding: 1.5rem;
     background: #050c14;
-    color: #FFf;
+    color: #fff;
 
     @include breakpoint-down(small){
         padding: 1rem;
+    }
+
+    nav{
+        border: 2px solid red;
+        height: 100%;
+
     }
 
     .avatar{
@@ -57,6 +63,7 @@ header{
 
     .nav{
         gap: 1.5rem;
+        // height: 100%;
 
         @include breakpoint-down(small){
             height: 100%;
