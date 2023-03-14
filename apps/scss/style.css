@@ -34,36 +34,34 @@ body {
   body main {
     width: 65%;
     position: absolute;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     left: 35%;
+    overflow-x: hidden;
     border: 2px solid green;
   }
 }
 @media (min-width: 64em) {
   body header {
     width: 30%;
-    height: 100%;
     position: fixed;
   }
   body main {
     width: 70%;
-    position: absolute;
-    height: 100vh;
     left: 30%;
+    position: absolute;
     border: 2px solid green;
   }
 }
 @media (min-width: 87.5em) {
   body header {
     width: 20%;
-    height: 100%;
     position: fixed;
   }
   body main {
     width: 80%;
-    position: absolute;
-    height: 100vh;
     left: 20%;
+    position: absolute;
     border: 2px solid green;
   }
 }
@@ -73,11 +71,14 @@ body {
     position: fixed;
     bottom: 0%;
     height: 8vh;
+    z-index: 100;
   }
   body main {
     width: 100%;
     left: 0;
-    height: 100vh;
+    position: absolute;
+    min-height: 92vh;
+    height: 100%;
     border: 2px solid green;
   }
 }
@@ -104,6 +105,13 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+}
+
+.color-change i {
+  color: #2596be;
+}
+.color-change span {
+  color: #fff;
 }
 
 @media (max-width: 39.9375em) {
@@ -177,12 +185,6 @@ header .nav {
 header .nav_items {
   height: 100%;
 }
-header .nav_items:first-child i {
-  color: #2596be;
-}
-header .nav_items:first-child span {
-  color: #fff;
-}
 header .nav_links {
   gap: 1rem;
   font-size: 1.25rem;
@@ -210,4 +212,35 @@ header .nav_links span {
     font-size: 1.5rem;
     align-items: center;
   }
+}
+
+main .main-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+@media (max-width: 39.9375em) {
+  main .main-container {
+    min-height: 92vh;
+    height: 100%;
+    width: 100%;
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 40em) {
+  main .main-container {
+    height: 100%;
+  }
+}
+main .main-container h1 {
+  border: 2px solid blue;
+}
+
+main .about-container {
+  background-color: #000;
+  min-height: 100vh;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

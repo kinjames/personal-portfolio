@@ -1,0 +1,26 @@
+main{
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        margin: 0 auto;
+        border: 2px solid red;
+
+        @include breakpoint-down(small){
+            min-height: 92vh;
+            height: 100%;
+            width: 100%;
+            padding-inline: 1.5rem;
+        }
+
+        @include breakpoint-up(medium){
+            height: 100%;
+        }
+
+        h1{
+            border: 2px solid blue;
+        }
+    }
+}
