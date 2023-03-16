@@ -47,7 +47,6 @@ body{
     @include breakpoint-up(large){
         header{
             width: 30%;
-            position: fixed;
         }
 
         main{
@@ -60,7 +59,6 @@ body{
     @include breakpoint-up(xlarge){
         header{
             width: 20%;
-            position: fixed;
         }
 
         main{
@@ -132,4 +130,9 @@ body{
     @include breakpoint-down(small){
         display: none;
     }
+}
+
+
+.hide{
+    display: none;
 }

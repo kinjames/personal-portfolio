@@ -9,8 +9,13 @@ header{
     }
 
     nav{
-        border: 2px solid red;
         height: 100%;
+        padding: 0.5rem;
+
+        @include breakpoint-down(small){
+            height: 100%;
+            padding: 0;
+        }
 
     }
 
@@ -63,7 +68,6 @@ header{
 
     .nav{
         gap: 1.5rem;
-        // height: 100%;
 
         @include breakpoint-down(small){
             height: 100%;
@@ -71,6 +75,7 @@ header{
 
         &_items{
             height: 100%;
+            border: 2px solid red;
         }
 
         &_links{
@@ -79,9 +84,9 @@ header{
             align-items: center;
             transition: all .3s ease-in-out;
             color: #464647;
+            border: 2px solid red;
 
             &:hover{
-                // transform: scale(1.1);
                 i{
                     color: #2596be;
                 }
