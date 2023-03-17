@@ -1,11 +1,11 @@
 main{
     background-color: #00060c;
-    padding: 1.5rem;
+    // padding: 1.5rem;
 
     .main-container{
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 100%;
         justify-content: center;
         margin: 0 auto;
         border: 2px solid red;
@@ -26,10 +26,11 @@ main{
     }
 
     .about-container{
-        width: 1040px;
         height: 100%;
         color: #fff;
+        padding: 1.5rem;
         margin: 0 auto;
+        border: 1px solid red;
 
         @include breakpoint-up(medium){
             width: 100%;
@@ -37,6 +38,7 @@ main{
 
         @include breakpoint-down(small) {
             width: 100%;
+            padding: 1rem;
         }
 
         h1{
@@ -52,8 +54,7 @@ main{
 
         .about-text-image{
             border: 1px solid red;
-            height: 100%;
-
+            margin-bottom: 2.5rem;
 
             .about-image{
                 width: 35%;
@@ -70,6 +71,7 @@ main{
 
                 @include breakpoint-down(small){
                     width: 100%;
+                    font-size: 0.875rem;
                 }
 
                 h3{
@@ -85,10 +87,26 @@ main{
                     line-height: 1.25rem;
                     margin-bottom: 1rem;
 
-                    span{
-                        font-weight: 700;
-                        color: #2596be;
+                    .span1{
+                        color: #464647;
                     }
+
+                    span{
+                        font-weight: 500;
+                    }
+                }
+
+                .about-subsection{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    justify-content: space-between;
+
+                    .para1 { grid-area: 1 / 1 / 2 / 2; }
+                    .para2 { grid-area: 1 / 2 / 2 / 3; }
+                    .para3 { grid-area: 2 / 1 / 3 / 2; }
+                    .para4 { grid-area: 2 / 2 / 3 / 3; }
+
                 }
             }
 

@@ -75,7 +75,6 @@ body {
     width: 100%;
     left: 0;
     position: absolute;
-    height: 100%;
     border: 2px solid green;
   }
 }
@@ -226,12 +225,11 @@ header .nav_links span {
 
 main {
   background-color: #00060c;
-  padding: 1.5rem;
 }
 main .main-container {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
   justify-content: center;
   margin: 0 auto;
   border: 2px solid red;
@@ -252,10 +250,11 @@ main .main-container h1 {
   border: 2px solid blue;
 }
 main .about-container {
-  width: 1040px;
   height: 100%;
   color: #fff;
+  padding: 1.5rem;
   margin: 0 auto;
+  border: 1px solid red;
 }
 @media (min-width: 40em) {
   main .about-container {
@@ -265,6 +264,7 @@ main .about-container {
 @media (max-width: 39.9375em) {
   main .about-container {
     width: 100%;
+    padding: 1rem;
   }
 }
 main .about-container h1 {
@@ -278,7 +278,7 @@ main .about-container .line {
 }
 main .about-container .about-text-image {
   border: 1px solid red;
-  height: 100%;
+  margin-bottom: 2.5rem;
 }
 main .about-container .about-text-image .about-image {
   width: 35%;
@@ -296,6 +296,7 @@ main .about-container .about-text-image .about-texts {
 @media (max-width: 39.9375em) {
   main .about-container .about-text-image .about-texts {
     width: 100%;
+    font-size: 0.875rem;
   }
 }
 main .about-container .about-text-image .about-texts h3 {
@@ -309,9 +310,29 @@ main .about-container .about-text-image .about-texts p {
   line-height: 1.25rem;
   margin-bottom: 1rem;
 }
+main .about-container .about-text-image .about-texts p .span1 {
+  color: #464647;
+}
 main .about-container .about-text-image .about-texts p span {
-  font-weight: 700;
-  color: #2596be;
+  font-weight: 500;
+}
+main .about-container .about-text-image .about-texts .about-subsection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-between;
+}
+main .about-container .about-text-image .about-texts .about-subsection .para1 {
+  grid-area: 1/1/2/2;
+}
+main .about-container .about-text-image .about-texts .about-subsection .para2 {
+  grid-area: 1/2/2/3;
+}
+main .about-container .about-text-image .about-texts .about-subsection .para3 {
+  grid-area: 2/1/3/2;
+}
+main .about-container .about-text-image .about-texts .about-subsection .para4 {
+  grid-area: 2/2/3/3;
 }
 @media (max-width: 39.9375em) {
   main .about-container .about-text-image {
