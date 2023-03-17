@@ -22,6 +22,7 @@ ul {
 body {
   position: relative;
   width: 100vw;
+  min-height: 100vh;
   height: 100%;
   font-family: "Montserrat", sans-serif;
 }
@@ -34,7 +35,6 @@ body {
   body main {
     width: 65%;
     position: absolute;
-    min-height: 100vh;
     height: 100%;
     left: 35%;
     overflow-x: hidden;
@@ -75,7 +75,6 @@ body {
     width: 100%;
     left: 0;
     position: absolute;
-    min-height: 92vh;
     height: 100%;
     border: 2px solid green;
   }
@@ -159,6 +158,7 @@ header .name {
 }
 header .social {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 2.5rem;
 }
@@ -224,6 +224,10 @@ header .nav_links span {
   }
 }
 
+main {
+  background-color: #00060c;
+  padding: 1.5rem;
+}
 main .main-container {
   display: flex;
   flex-direction: column;
@@ -234,7 +238,6 @@ main .main-container {
 }
 @media (max-width: 39.9375em) {
   main .main-container {
-    min-height: 92vh;
     height: 100%;
     width: 100%;
     padding-inline: 1.5rem;
@@ -247,4 +250,71 @@ main .main-container {
 }
 main .main-container h1 {
   border: 2px solid blue;
+}
+main .about-container {
+  width: 1040px;
+  height: 100%;
+  color: #fff;
+  margin: 0 auto;
+}
+@media (min-width: 40em) {
+  main .about-container {
+    width: 100%;
+  }
+}
+@media (max-width: 39.9375em) {
+  main .about-container {
+    width: 100%;
+  }
+}
+main .about-container h1 {
+  margin-bottom: 0.5rem;
+}
+main .about-container .line {
+  width: 7rem;
+  height: 0.25rem;
+  background-color: #2596be;
+  margin-bottom: 3rem;
+}
+main .about-container .about-text-image {
+  border: 1px solid red;
+  height: 100%;
+}
+main .about-container .about-text-image .about-image {
+  width: 35%;
+  border: 2px solid green;
+}
+@media (max-width: 39.9375em) {
+  main .about-container .about-text-image .about-image {
+    width: 100%;
+  }
+}
+main .about-container .about-text-image .about-texts {
+  width: 60%;
+  border: 2px solid blue;
+}
+@media (max-width: 39.9375em) {
+  main .about-container .about-text-image .about-texts {
+    width: 100%;
+  }
+}
+main .about-container .about-text-image .about-texts h3 {
+  margin-bottom: 0.5rem;
+}
+main .about-container .about-text-image .about-texts .line {
+  margin-bottom: 1rem;
+}
+main .about-container .about-text-image .about-texts p {
+  letter-spacing: 0.5px;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+main .about-container .about-text-image .about-texts p span {
+  font-weight: 700;
+  color: #2596be;
+}
+@media (max-width: 39.9375em) {
+  main .about-container .about-text-image {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

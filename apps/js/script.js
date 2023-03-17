@@ -101,7 +101,7 @@ navItems.forEach(nav =>(
 
 function startUp(){
     homePage.classList.add('color-change');
-    mainPage.style.display = "flex";  
+    mainPage.style.display = "none";  
 }
 
 
