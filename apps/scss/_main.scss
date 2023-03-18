@@ -56,11 +56,12 @@ main{
             border: 1px solid red;
             margin-bottom: 2.5rem;
 
+
             .about-image{
                 width: 35%;
                 border: 2px solid green;
 
-                @include breakpoint-down(small){
+                @include breakpoint-down(medium){
                     width: 100%;
                 }
             }
@@ -69,7 +70,7 @@ main{
                 width: 60%;
                 border: 2px solid blue;
 
-                @include breakpoint-down(small){
+                @include breakpoint-down(medium){
                     width: 100%;
                     font-size: 0.875rem;
                 }
@@ -110,12 +111,44 @@ main{
                 }
             }
 
-            @include breakpoint-down(small){
+            @include breakpoint-down(medium){
                 flex-direction: column;
             }
         }
 
 
 
+    }
+
+    .skills-certification {
+        width: 100%;
+
+        @include breakpoint-down(medium){
+            flex-direction: column;
+        }
+        .about-skills{
+            width: 60%;
+
+            .languages{
+                width: 100%;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                border: 2px solid blue;
+
+                .language-details{
+                    border: 2px solid red;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 1fr;
+
+                    img{
+                        border: 2px solid red;
+                        width: 100%;
+                        height: 70px;
+                    }
+                }
+            }
+        }
     }
 }

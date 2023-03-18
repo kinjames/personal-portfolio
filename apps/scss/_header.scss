@@ -1,6 +1,6 @@
 header{
     
-    padding: 1.5rem;
+    padding: 1rem;
     background: #050c14;
     color: #fff;
 
@@ -12,7 +12,7 @@ header{
         height: 100%;
         padding: 0.5rem;
 
-        @include breakpoint-down(small){
+        @include breakpoint-down(medium){
             height: 100%;
             padding: 0;
         }
