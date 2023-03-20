@@ -128,6 +128,9 @@ body {
 }
 
 .line {
+  width: 7rem;
+  height: 0.25rem;
+  background-color: #2596be;
   margin-bottom: 1rem;
 }
 
@@ -263,8 +266,7 @@ main .main-container h1 {
 main .about-container {
   color: #fff;
   padding: 1.5rem;
-  margin: 0 auto 3rem;
-  border: 1px solid red;
+  margin: 0 auto 8rem;
 }
 @media (min-width: 40em) {
   main .about-container {
@@ -284,10 +286,10 @@ main .about-container .line {
   width: 7rem;
   height: 0.25rem;
   background-color: #2596be;
-  margin-bottom: 3rem;
 }
 main .about-container .about-text-image {
-  margin-bottom: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
 }
 main .about-container .about-text-image .about-image {
   width: 35%;
@@ -341,10 +343,14 @@ main .about-container .about-text-image .about-texts .about-subsection .para4 {
 @media (max-width: 63.9375em) {
   main .about-container .about-text-image {
     flex-direction: column;
+    gap: 1.5rem;
   }
 }
 main .about-container .skills-certification {
   width: 100%;
+}
+main .about-container .skills-certification h3 {
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 63.9375em) {
   main .about-container .skills-certification {
@@ -352,7 +358,7 @@ main .about-container .skills-certification {
   }
 }
 main .about-container .skills-certification .about-skills {
-  width: 60%;
+  width: 55%;
   height: 100%;
 }
 @media (max-width: 63.9375em) {
@@ -398,10 +404,40 @@ main .about-container .skills-certification .about-skills .languages .language-d
   background-size: 50%;
 }
 main .about-container .skills-certification .about-certifications {
-  width: 35%;
+  width: 40%;
 }
 @media (max-width: 63.9375em) {
   main .about-container .skills-certification .about-certifications {
     width: 100%;
   }
+}
+main .about-container .skills-certification .about-certifications .name {
+  color: #2596be;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+}
+main .about-container .skills-certification .about-certifications .school {
+  font-weight: 500;
+}
+main .about-container .skills-certification .about-certifications .ceritification-details {
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+@media (max-width: 63.9375em) {
+  main .about-container .skills-certification {
+    gap: 3rem;
+  }
+}
+main .portfolio-section {
+  color: #fff;
+  padding: 1.5rem;
+}
+@media (max-width: 39.9375em) {
+  main .portfolio-section {
+    height: 100%;
+  }
+}
+main .portfolio-section h1 {
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=about.css.map */
